@@ -14,7 +14,7 @@
   </div>
 </template>
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 export default {
   name: "routerTab",
   data() {
@@ -53,6 +53,9 @@ export default {
 //    axios.get('api/admin/goods').then(res=>{
 //        console.log(res);
 //    })
+    this.$axios.get('/admin/goods').then(res =>{
+      console.log(res)
+    })
   }
 };
 </script>
